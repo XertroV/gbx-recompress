@@ -2,13 +2,17 @@
 
 small python util to recompress payloads of gbx files
 
-will only work if there are no entries in the reference table of external nodes
+saves about 10-20% by my testing.
 
-`python3 recompress.py`
+will only work if there are no entries in the reference table of external nodes. (all items i've tested with are fine)
+
+if developing: `python3 recompress.py`
+
+Otherwise download the release and then follow:
 
 ## usage
 
-run `.\path\to\recompress-gbx.exe MyCoolThing.Item.Gbx` for any .Gbx file.
+via the release: run `.\path\to\recompress-gbx.exe MyCoolThing.Item.Gbx` for any .Gbx file.
 
 The program should complain if it knows it will fail, but this is pretty rough so you know, it might think it makes something valid that isn't.
 
